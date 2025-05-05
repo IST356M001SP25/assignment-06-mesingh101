@@ -1,7 +1,7 @@
 # Reflection
 
-Student Name:  name
-Sudent Email:  email
+Student Name:  Mera Singh
+Sudent Email:  mesingh@syr.edu
 
 ## Instructions
 
@@ -22,4 +22,10 @@ Examples:
 **Best Reflection** "I learned when to use while vs for loops. While loops are for sentiel-controlled values (waiting for a condition to occur), vs for loops are for iterating over collections of fixed values."
 
 `--- Reflection Below This Line ---`
+
+I still couldn’t get the full pipeline to work, but I did make progress on understanding how multi-step ETL processes function using APIs. I was able to successfully implement and test individual API calls for Google Places and Azure services (like sentiment analysis and entity recognition). However, I struggled with the file pathing and understanding exactly how the caching and CSV outputs were being saved and read. My main issue was making sure that the files (like cache/reviews.csv) were being generated properly, and then picked up by the tests.
+
+I understand the concept of transforming data through multiple stages (place → review → sentiment → entities), but I need more practice with debugging file I/O errors in Python and understanding the structure of the test environment — especially how files need to be created ahead of time for tests to pass.
+
+For next steps, I plan to review the use of os.path and __main__ blocks in Python scripts, and get more hands-on experience running scripts that generate output used by other modules or tests. I’ll also look into how to verify file paths dynamically to avoid hardcoded assumptions that may break.
 
